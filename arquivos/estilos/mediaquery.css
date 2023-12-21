@@ -8,6 +8,15 @@
 }
 
 @media screen and (min-width: 768px) {
+    /* MENU */
+    .menuHamb {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
     #container {
         gap: 60px;
     }
