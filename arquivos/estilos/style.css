@@ -16,7 +16,7 @@
 
 body {
     height: 100%;
-    /* width: 400px; */
+    width: 100%;
     margin: auto;
     /* border-left: 1px solid black;
     border-right: 1px solid black; */
@@ -61,7 +61,9 @@ main {
     margin-bottom: 20px;
 }
 
-#first-div .p-redirect {
+.p-redirect {
+    max-width: 500px;
+    margin: auto;
     background-color: lightgray;
     border-bottom: 2px solid var(--darkPurple);
     border-top: 2px solid var(--darkPurple);
@@ -71,19 +73,19 @@ main {
     text-align: center;
 }
 
-section#fotos {
+#container {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
 }
 
-section#fotos > div {
+.caixa {
     display: flex;
     flex-direction: column;
     margin: auto;
     margin-bottom: 30px;
 }
 
-section#fotos h2 {
+#container h2 {
     text-align: center;
     font-variant: small-caps;
     margin-top: 20px;
@@ -92,20 +94,28 @@ section#fotos h2 {
     border-top-left-radius: 5px;
 }
 
-section#fotos img {
+.tituloFoto {
+    display: block;
+}
+
+.tituloRight {
+    display: none;
+}
+
+#container img {
     box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.336);
 }
 
-section#fotos div > a {
+#container a {
     padding: 4px 0px 0px 0px;
     text-decoration: none;
 }
 
-section#fotos div > a:hover {
+#container a:hover {
     background-color:  var(--darkPurple);
 }
 
-section .link-redirect {
+.link-redirect {
     color: #6130B0;
     text-decoration: none;
     font-weight: bold;
@@ -114,23 +124,23 @@ section .link-redirect {
     padding: 0px 5px;
 }
 
-section .link-redirect:hover {
+.link-redirect:hover {
     color: white;
     background-color:  var(--lightPurple);
 }
 
-section#fotos > div p {
+.caixa p {
     margin: 20px 0px;
 }
 
-section#fotos > div hr {
+#container hr {
     background-color: var(--lightPurple);
     border: none;
     height: 2px;
     margin: 0px -20px;
 }
 
-section#fotos > div, #fotos img {
+.caixa, .caixa img {
     width: 98vw;
     max-width: 430px;
 }
