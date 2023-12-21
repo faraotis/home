@@ -131,7 +131,8 @@ section#fotos > div hr {
 }
 
 section#fotos > div, #fotos img {
-    max-width: 330px;
+    width: 98vw;
+    max-width: 430px;
 }
 
 footer {
