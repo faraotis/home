@@ -127,48 +127,59 @@ main {
     margin: auto;
 }
 
-
 /* SECTIONS DOS SITES */
+#container > section {
+    min-height: 100vh;
+    padding: 120px 0px;
+}
+
 #supercell {
     background-color: #1F7AEB;
     color: white;
+    text-shadow: 2px 2px 4px #202c4b96;
 }
 
 #viagens {
-    background-color: ;
-    color: ;
+    background-color: #0E2224;
+    color: #A8CDD8;
+    text-shadow: 2px 2px 4px #0D181896;
 }
 
 #cocaCola {
-    background-color: ;
-    color: ;
+    background-color: black;
+    color: white;
+    text-shadow: 2px 2px 4px 96;
 }
 
 #login {
-    background-color: ;
-    color: ;
+    background-color: white;
+    color: black;
+    text-shadow: 2px 2px 4px 96;
 }
 
 #curriculo {
-    background-color: ;
-    color: ;
+    background-color: #45B39C;
+    color: #fff;
+    text-shadow: 2px 2px 4px #3EA18D;
 }
 
 #cordel {
     background-color: ;
     color: ;
+    text-shadow: 2px 2px 4px 96;
 }
 
 #social {
     background-color: ;
     color: ;
+    text-shadow: 2px 2px 4px 96;
 }
 /**/
 
 #container h2 {
     text-align: center;
-    margin-top: 20px;
-    font-size: 2em;
+    margin-bottom: 60px;
+    font-size: 2.1em;
 }
 
 #container p {
