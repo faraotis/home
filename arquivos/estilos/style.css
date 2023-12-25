@@ -196,7 +196,7 @@ main {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 0.7em;
     border-radius: 5px;
     padding: 2px;
 }
@@ -212,69 +212,4 @@ main {
 .caixa, .caixa img {
     width: 100vw;
     max-width: 430px;
-}
-
-footer {
-    padding-top: 50px;
-    background-color: rgb(15, 15, 15);
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-footer > section {
-    padding: 20px 35px;
-}
-
-footer h3 {
-    padding: 15px 0px;
-    font-size: 1.1em;
-    color: #e4de38;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-variant: small-caps;
-}
-
-footer a {
-    font-size: 0.9em;
-    color: white;
-    text-decoration: none;
-    line-height: 1.5em;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-#meusProjetos ul {
-    columns: 3;
-    list-style: none;
-}
-
-#meusProjetos #Github {
-    display: block;
-    padding-top: 20px;
-    font-size: 1.1em;
-    font-weight: bold;
-    color: #a09f78;
-}
-
-#creditos ul {
-    list-style: none;
-}
-
-#recado {
-    margin-bottom: 20px;
-    font-size: 0.8em;
-    text-align: justify;
-}
-
-#ultimoFooter {
-    text-align: center;
-    background-color: black;
-    border-top: 2px solid var(--lightYellow);
-}
-
-#Faraotis {
-    color: #F0E605;
-    font-variant: small-caps;
-    font-size: 1.2em;
 }
