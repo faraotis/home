@@ -1,227 +1,146 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faraotis - Home</title>
-    <link rel="stylesheet" href="arquivos/estilos/style.css">
-    <link rel="stylesheet" href="arquivos/estilos/mediaquery.css">
-    <link rel="stylesheet" href="arquivos/estilos/style-footer.css">
+    <title>Home | Faraotis</title>
+    <link rel="shortcut icon" href="arquivos/imagens/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="arquivos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="arquivos/scripts.js" defer></script>
 </head>
 <body>
     <header>
-        <div>
-            <p>
-                Faraotis
-            </p>
-        </div>
-        <div class="menuHamb" onclick="menuHamb()">
-            <div></div>
-            <div></div>
+        <div id="titleHeader">Faraotis</div>
+        <div id="menuHeader">
+            <div id="tema" onclick="mudarTema()">
+                <abbr id="abbrTema" title="mudar tema"></abbr>
+            </div>
             <div></div>
         </div>
-        <div class="menuClose" onclick="menuClose()">
-            &#8592;
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">GitHub</a></li>
-                <li><a href="#meusProjetos">Mais</a></li>
-                <li><a href="#">Creditos</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-            </ul>
-        </nav>
     </header>
-    <menu>
-        <ul>
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">Creditos</a></li>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-        </ul>
-    </menu>
-    <main>
-        <section id="container">
-            <section id="supercell"> <!-- SUPERCELL -->
-                <h2 class="tituloFoto">Supercell</h2>
-                <div class="caixa">
-                    <div>
-                        <a href="https://faraotis.github.io/supercell/" target="_parent">
-                            <img src="arquivos/imagens/foto-supercell.jpg" alt="foto-teste">
-                        </a>
-                    </div>
-                    <div>
-                        <p>
-                            Criei este site baseado no site da Supercell. Por enquanto, fiz a parte visual do site.<br> <a class="redirect" href="https://faraotis.github.io/supercell/" target="_parent">redirecionar</a>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section id="viagens"> <!-- VIAGENS -->
-                <h2 class="tituloFoto">Viagens</h2>
-                <div class="caixa" id="caixaContr">
-                    <div>
-                        <a href="https://faraotis.github.io/viagens/">
-                            <img src="arquivos/imagens/foto-viagens.jpg" alt="foto-teste">
-                        </a>
-                    </div>
-                    <div>
-                        <p>
-                            Criei este site baseado em um projeto da DevMedia, no qual propuseram um teste de conhecimentos em HTML e CSS para seus desenvolvedores.<br> <a class="redirect" href="https://faraotis.github.io/viagens/" target="_parent">redirecionar</a>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section id="cocaCola"> <!-- COCA-COLA -->
-                <h2 class="tituloFoto">Coca-Cola</h2>
-                <div class="caixa">
-                    <div>
-                        <a href="https://faraotis.github.io/coca-cola/">
-                            <img src="arquivos/imagens/foto-coca-cola.jpg" alt="foto-teste">
-                        </a>
-                    </div>
-                    <div>
-                        <p>
-                            Criei este site da Coca-Cola para treinar minhas habilidades em JavaScript, HTML e CSS (Ainda está em desenvolvimento).<br> <a class="redirect" href="https://faraotis.github.io/coca-cola/" target="_parent">redirecionar</a>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section id="login"> <!-- LOGIN -->
-                <h2 class="tituloFoto">Login</h2>
-                <div class="caixa" id="caixaContr">
-                    <div>
-                        <a href="https://faraotis.github.io/login/">
-                            <img src="arquivos/imagens/foto-login.png" alt="foto-teste">
-                        </a>
-                    </div>
-                    <div>
-                        <p>
-                            Site de login que criei ao fazer o Curso do Curso em Video, que foi a basa de muitos projetos que fiz.<br> <a class="redirect" href="https://faraotis.github.io/login/" target="_parent" style="color: black;" >redirecionar</a>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section id="curriculo"> <!-- CURRICULO -->
-                <h2 class="tituloFoto">Curriculo</h2>
-                <div class="caixa">
-                    <div>
-                        <a href="https://faraotis.github.io/curriculo/">
-                            <img src="arquivos/imagens/foto-curriculo.png" alt="foto-teste">
-                        </a>
-                    </div>
-                    <div>
-                        <p>
-                            Fiz um curriculo web baseado em um layout que vi no pinterest.<br> <a class="redirect" href="https://faraotis.github.io/curriculo/" target="_parent">redirecionar</a>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section id="cordel"> <!-- CORDEL -->
-                <h2 class="tituloFoto">Cordel</h2>
-                <div class="caixa" id="caixaContr">
-                    <div>
-                        <a href="https://faraotis.github.io/cordel/">
-                            <img src="arquivos/imagens/foto-cordel.jpg" alt="foto-teste">
-                        </a>
-                    </div>
-                    <div>
-                        <p>
-                            Fiz esse cordel virtual baseado nos poemas de Martin Duarte.<br> <a class="redirect" href="https://faraotis.github.io/cordel/" target="_parent">redirecionar</a>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section id="social"> <!-- SOCIAL -->
-                <h2 class="tituloFoto">Social</h2>
-                <div class="caixa">
-                    <div>
-                        <a href="https://faraotis.github.io/social/">
-                            <img src="arquivos/imagens/foto-social.jpg" alt="foto-teste">
-                        </a>
-                    </div>
-                    <div>
-                        <p>
-                            Esse site simula um smartphone onde se pode entrar em algumas redes social nele.<br> <a class="redirect" href="https://faraotis.github.io/social/" target="_parent" style="color: black;" >redirecionar</a>
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </section>
-    </main>
-    <footer>
-        <div>
-            <div class="container" id="primeira-div-footer">
-                <div class="div-logos-e-lojas">
-                    <div id="icones-footer">
-                        <div id="p-footer">
-                            <p>Follow us on</p>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="arquivos/imagens/redesSociais/icone-yt.png" alt="youtube">
-                            </a>
-                            <a href="#">
-                                <img src="arquivos/imagens/redesSociais/icone-face.png" alt="facebook">
-                            </a>
-                            <a href="#">
-                                <img src="arquivos/imagens/redesSociais/icone-insta.png" alt="instagram">
-                            </a>
-                            <a href="#">
-                                <img src="arquivos/imagens/redesSociais/icone-twi.png" alt="X/twitter">
-                            </a>
-                            <a href="#">
-                                <img src="arquivos/imagens/redesSociais/icone-linke.png" alt="linkedin">
-                            </a>
-                            <a href="#">
-                                <img src="arquivos/imagens/redesSociais/icone-glass.png" alt="glassdoor">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="div-logos-e-lojas">
-                    <div id="lojas-footer">
-                        <div id="p-footer" class="p-download-footer">
-                            <p>Download our games from</p>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="arquivos/imagens/redesSociais/appstore.png" alt="app-store">
-                            </a>
-                            <a href="#">
-                                <img src="arquivos/imagens/redesSociais/googleplay.png" alt="google-play">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container" id="links-footer">
-                <a href="#">Terms of Service</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Parent's Guide</a>
-                <a href="#">Safe and Fair Play Policy</a>
-                <a href="#">Other Legal Docs</a>
-                <a href="#">For Media</a>
-                <a href="#">Manage Cookies</a>
-            </div>
-            <div class="container" id="ultima-div-footer">
+    <section id="secPosHeader">
+        <nav>
+            <div id="navTitle">Home</div>
+            <div id="navContent">
                 <div>
-                    <p>
-                        Faraotis <br>
-                        +55 Number <br>
-                        Brasil <br>
-                    </p>
+                    <a href="https://github.com/faraotis/" target="_blank" id="reposit">Portifólio</a>
                 </div>
-                <div class="container">
-                    <a href="#">
-                        <img src="arquivos/imagens/supercell_logo.webp" alt="">
-                    </a>
+                <!-- <div>
+                    <a href="">Blog</a>
                 </div>
+                <div>
+                    <a href="">Contact</a>
+                </div> -->
+            </div>
+        </nav>
+        <div id="divPosNav">
+            <div id="navStar">
+                <i class="material-icons">star</i>
+                <i class="material-icons" id="starCenter">star</i>
+                <i class="material-icons">star</i>
+            </div>
+            <h1>Meus Projetos</h1>
+            <div id="linha"><!--CSS--></div>
+            <p>
+                DESCUBRA MEU PORTFÓLIO WEB, ONDE CADA PÁGINA REFLETE MINHA PAIXÃO PELO DESENVOLVIMENTO DIGITAL E INOVAÇÃO.
+            </p>
+            <div id="div-arrowDown">
+                <a href="#services">
+                    <i class="material-icons">expand_circle_down</i>
+                </a>
             </div>
         </div>
-    </footer>
-    <script src="arquivos/scripts/scripts.js"></script>
+    </section>
+    <section class="contentProjects" id="services">
+        <div id="titleProject">
+            <h1>Projetos</h1>
+            <p>Aqui está minhas criações.</p>
+        </div>
+        <div id="contentDiv">
+            <a href="https://faraotis.github.io/w3schools/" target="_parent">
+                <div id="divIcon">
+                    <i class="material-icons">school</i>
+                </div>
+                <div id="divTextPr">
+                    <h2>W3schools</h2>
+                    <div>Site da W3schools. A Escola online dos programadores.</div>
+                </div>
+            </a>
+            <a href="https://faraotis.github.io/supercell/" target="_parent">
+                <div id="divIcon">
+                    <i class="material-icons">smartphone</i>
+                </div>
+                <div id="divTextPr">
+                    <h2>Supercell</h2>
+                    <div>Site da Supercell. Versao do inicio de 2024.</div>
+                </div>
+            </a>
+            <a href="https://faraotis.github.io/viagens/" target="_parent">
+                <div id="divIcon">
+                    <i class="material-icons">flight</i>
+                </div>
+                <div id="divTextPr">
+                    <h2>Viagens</h2>
+                    <div>Baseado em layout proposto pela DevMedia.</div>
+                </div>
+            </a>
+            <a href="https://faraotis.github.io/fardown/" target="_parent">
+                <div id="divIcon">
+                    <i class="material-icons">download</i>
+                </div>
+                <div id="divTextPr">
+                    <h2>Fardown</h2>
+                    <div>Acesso rapido a ferramentas do dia a dia.</div>
+                </div>
+            </a>
+            <a href="https://faraotis.github.io/login/" target="_parent">
+                <div id="divIcon">
+                    <i class="material-icons">login</i>
+                </div>
+                <div id="divTextPr">
+                    <h2>Login</h2>
+                    <div>Pagina de login proposta pelo Curso em Video.</div>
+                </div>
+            </a>
+            <a href="https://faraotis.github.io/coca-cola/" target="_parent">
+                <div id="divIcon">
+                    <i class="material-icons">coffee</i>
+                </div>
+                <div id="divTextPr">
+                    <h2>Coca-Cola</h2>
+                    <div>Site da Coca-Cola. <strong>Versao desktop em desenvolvimento</strong>.
+                    </div>
+                </div>
+            </a>
+            <a href="https://faraotis.github.io/android/" target="_parent">
+                <div id="divIcon">
+                    <i class="material-icons">android</i>
+                </div>
+                <div id="divTextPr">
+                    <h2>Android</h2>
+                    <div>Historia do BugDroid, mascote do Android. </div>
+                </div>
+            </a>
+            <a href="https://faraotis.github.io/cordel/" target="_parent">
+                <div id="divIcon">
+                    <i class="material-icons">gesture</i>
+                </div>
+                <div id="divTextPr">
+                    <h2>Cordel</h2>
+                    <div>Cordel moderno de Milton Duarte em efeito parallax.</div>
+                </div>
+            </a>
+            <!-- <a href="https://faraotis.github.io/" target="_parent">
+                <div id="divIcon">
+                    <i class="material-icons"></i>
+                </div>
+                <div id="divTextPr">
+                    <h2></h2>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+            </a> -->
+        </div>
+    </section>
 </body>
 </html>

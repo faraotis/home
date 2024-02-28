@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --gray: #1A1A1A;
+    --lightgray: #2B2B2B;
+    --darkgray: #40383A;
+    --red: #E7362C;
+}
+
+body {
+    max-width: 1980px;
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0px 20px;
+    background-color: white;
+    color: #1A1A1A;
+}
+
+#titleHeader {
+    font-size: 1.5em;
+    font-variant: small-caps;
+}
+
+header > div, nav > div {
+    cursor: pointer;
+}
+
+#menuHeader {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#tema {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background-color: #1a1a1a;
+    border-radius: 50%;
+}
+
+#abbrTema  {
+    background-image: linear-gradient(to right, #1a1a1a 0%, #1a1a1a 50%,  white 50%, white 100%);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+#secPosHeader {
+    height: 400px;
+    background: black url('imagens/img-bg.jpeg') center bottom no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    padding: 20px;
+}
+
+#navTitle {
+    font-size: 1.8em;
+}
+
+#navTitle:hover {
+    text-decoration: underline;
+}
+
+#navContent {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    display: flex;
+    gap: 20px;
+}
+
+#navContent a {
+    color: white;
+    text-decoration: none;
+}
+
+#navContent a:hover {
+    text-decoration: underline;
+}
+
+#starCenter {
+    font-size: 2em;
+}
+
+#divPosNav {
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    width: 85vw;
+    max-width: 670px;
+    font-size: 1.1em;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#linha {
+    margin: auto;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+}
+
+#div-arrowDown {
+    cursor: pointer;
+}
+
+#div-arrowDown a {
+    color: white;
+}
+
+#div-arrowDown a:hover {
+    color: #b0b0b0;
+}
+
+#div-arrowDown i {
+    font-size: 4em;
+}
+
+#titleProject {
+    font-size: 1.5em;
+    margin: 30px 0px;
+}
+
+.contentProjects {
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 50px 0px;
+    gap: 40px;
+}
+
+#contentDiv {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#contentDiv > a {
+    min-height: 135px;
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
+    border-left: 5px solid transparent;
+}
+
+#contentDiv > a:hover {
+    border-left: 5px solid var(--red);
+}
+
+#divIcon {
+    margin-top: 8px;
+}
+
+#divIcon i {
+    color: white;
+    background-color: var(--red);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#divTextPr {
+    width: 190px;
+    text-align: left;
+}
+
+#divTextPr h2 {
+    margin-bottom: 8px;
+}
+
+@media screen and (min-width: 993px) {
+    #secPosHeader {
+        height: 500px;
+    }
+
+    #divPosNav {
+        font-size: 1.4em;
+        margin-top: 10px;
+        gap: 30px;
+    }
+}
+@media screen and (min-width: 1293px) {
+    #secPosHeader {
+        height: 600px;
+    }
+
+    #divPosNav {
+        font-size: 1.5em;
+        margin-top: 15px;
+        gap: 35px;
+    }
+}
+@media screen and (min-width: 1880px) {
+    #secPosHeader {
+        height: 750px;
+    }
+
+    #divPosNav {
+        font-size: 1.6em;
+        margin-top: 35px;
+        gap: 45px;
+    }
+}
