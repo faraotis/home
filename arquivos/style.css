@@ -12,6 +12,9 @@
     --lightgray: #2B2B2B;
     --darkgray: #40383A;
     --red: #E7362C;
+    --purple: #4e2d58;
+    --lightPurple: #734082;
+    --darkPurple: #341E3B;
 }
 
 body {
@@ -180,7 +183,7 @@ nav {
 }
 
 #contentDiv > a:hover {
-    border-left: 5px solid var(--red);
+    border-left: 5px solid var(--purple);
 }
 
 #divIcon {
@@ -189,7 +192,7 @@ nav {
 
 #divIcon i {
     color: white;
-    background-color: var(--red);
+    background-color: var(--purple);
     padding: 10px;
     border-radius: 50%;
 }
@@ -203,6 +206,79 @@ nav {
     margin-bottom: 8px;
 }
 
+footer {
+    background-color: var(--darkPurple);
+    color: white;
+    padding: 80px 130px 0px 130px;
+}
+
+footer > div {
+    max-width: 1200px;
+    padding-bottom: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.fChildFooter {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#FirstChild {
+    gap: 15px;
+}
+
+#SecondChild {
+    gap: 40px;
+}
+
+#boxIconsFooter {
+    display: flex;
+    gap: 20px;
+}
+
+#boxSob, #boxSub {
+    border-radius: 12px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 150px;
+    height: 150px;
+}
+
+#boxSob {
+    z-index: 2;
+    background-color: var(--lightPurple);
+}
+
+#boxSub {
+    transform: translate(-10px, -10px);
+    z-index: 1;
+    background-color: var(--purple);
+}
+
+#fimFooter {
+    padding: 12px;
+    text-align: center;
+    background-color: var(--purple);
+}
+
+#fimFooter a {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 500px) {
+    #SecondChild {
+        flex-direction: row;
+    }
+}
+
 @media screen and (min-width: 993px) {
     #secPosHeader {
         height: 500px;
@@ -212,6 +288,10 @@ nav {
         font-size: 1.4em;
         margin-top: 10px;
         gap: 30px;
+    }
+
+    footer > div {
+        flex-direction: row;
     }
 }
 @media screen and (min-width: 1293px) {
