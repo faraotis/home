@@ -25,6 +25,8 @@ body {
 
 header {
     display: flex;
+    position: sticky;
+    top: 0px;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
@@ -32,6 +34,7 @@ header {
     padding: 0px 20px;
     background-color: white;
     color: #1A1A1A;
+    border-bottom: 1px solid #acacac;
 }
 
 #titleHeader {
